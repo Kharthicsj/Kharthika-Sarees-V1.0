@@ -369,13 +369,16 @@ a.buy-now-link {
     }
   }
 
-  @media only screen and (max-width: 540px) {
+  @media only screen and (max-width: 768px) {
     /* Adjust styles for mobile devices here */
     .header-left h1 {
       display: none;
     }
     nav ul li {
-      margin-right: 10px;
+      display: inline-block;
+      margin-right: 0.1px;
+      margin-left: 0px;
+      font-size: 13px;
     }
     .dropdown-content {
       min-width: 120px;
@@ -433,7 +436,7 @@ a.buy-now-link {
     }
 
     /* Media Query for Mobile Devices */
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
   /* Adjust styles for mobile devices here */
   .header-left h1 {
     display: none;
