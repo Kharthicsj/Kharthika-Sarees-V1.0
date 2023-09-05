@@ -53,8 +53,6 @@ body, h1, h2, h3, p, ul, li, form {
   nav ul li {
     display: inline;
     margin-right: 20px;
-    font-color: black;
-    text-decoration: none;
   }
   
   nav ul li:last-child {
