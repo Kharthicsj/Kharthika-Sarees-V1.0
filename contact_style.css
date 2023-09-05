@@ -377,13 +377,16 @@ body, h1, h2, h3, p, ul, li, form {
   }
 
   /* Media Query for Mobile Devices */
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
     /* Adjust styles for mobile devices here */
     .header-left h1 {
       display: none;
     }
     nav ul li {
-      margin-right: 10px;
+      display: inline-block;
+      margin-right: 0.1px;
+      margin-left: 0px;
+      font-size: 13px;
     }
     .dropdown-content {
       min-width: 120px;
@@ -406,41 +409,41 @@ body, h1, h2, h3, p, ul, li, form {
       transform: scale(1.02);
     }
     .owner1 img {
-      width: 70%;
-      height: 70%;
+      width: 90%;
+      height: 90%;
       align-items: center; /* This line doesn't seem necessary, you can remove it */
     }
     .owner1 h1 {
       align-items: center;
       font-size: 24px; /* Reduce font size for h1 */
-      margin: 10px 50px; /* Add margin to position it below the image */
-
     }
     .owner1 h3{
-      padding-left: 150px;
+      padding-left: 50px;
     }
 
     /* about-2 */
     .owner2{
       flex-direction: column; /* Stack elements vertically */
       align-items: center; /* Center elements horizontally */
-      text-align: center; /* Center text within the container */
+      text-align: left; /* Center text within the container */
     }
     .owner2:hover{
       transform: scale(1.02);
     }
     .owner2 img{
-      width: 70%;
-      height: 70%;
+      width: 90%;
+      height: 90%;
       align-items: center;
     }
     .owner2 h1{
+      text-align: center;
       align-items: center;
-      font-size: 24px; /* Reduce font size for h1 */
-      margin: 10px 50px; /* Add margin to position it below the image */
+      font-size: 22px; /* Reduce font size for h1 */
+      padding-left: 20px;
     }
     .owner2 h3{
-      padding-left: 150px;
+      text-align: center;
+      padding-left: 85px;
     }
 
     /* Footer */
