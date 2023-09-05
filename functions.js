@@ -37,7 +37,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       }
     });
   });
-
 function redirectToShopPage(target) {
   // Define the target section IDs for each shop category
   const targets = {
@@ -54,10 +53,20 @@ function redirectToShopPage(target) {
     // Get the target section ID
     const targetSection = targets[target];
 
-    // Redirect to the target HTML file and scroll to the section
-    window.location.href = `Shop.html#${targetSection}`;
+    // Redirect to the target HTML file
+    window.location.href = 'Shop.html';
+
+    // Listen for the 'load' event on the target HTML file
+    window.addEventListener('load', function() {
+      // Scroll to the target section using JavaScript
+      const element = document.getElementById(targetSection);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
   }
 }
+
 
 document.getElementById('cotton-link').addEventListener('click', function(e) {
     e.preventDefault();
