@@ -449,6 +449,7 @@ video:last-child {
     display: inline-block;
     margin-right: 0.1px;
     margin-left: 0px;
+    font-size: 13px;
   }
   .dropdown-content {
     min-width: 120px;
