@@ -80,7 +80,12 @@ document.getElementById('cotton-link').addEventListener('click', function(e) {
 
   document.getElementById('soft-silk-link').addEventListener('click', function(e) {
     e.preventDefault();
-    window.location.href = 'Shop.html#soft-silk';
+    window.location.href = 'Shop.html#soft_silk';
+  });
+
+  document.getElementById('about-link').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.location.href = 'index.html#about';
   });
   
   
