@@ -377,7 +377,7 @@ body, h1, h2, h3, p, ul, li, form {
   }
 
   /* Media Query for Mobile Devices */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 640px) {
     /* Adjust styles for mobile devices here */
     .header-left h1 {
       display: none;
