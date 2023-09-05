@@ -54,11 +54,8 @@ function redirectToShopPage(target) {
     // Get the target section ID
     const targetSection = targets[target];
 
-    // Scroll to the target section
-    const targetElement = document.getElementById(targetSection);
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth' });
-    }
+    // Redirect to the target HTML file and scroll to the section
+    window.location.href = `Shop.html#${targetSection}`;
   }
 }
 
