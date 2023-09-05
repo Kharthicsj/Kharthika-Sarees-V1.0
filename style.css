@@ -437,8 +437,13 @@ video:last-child {
   .header-left h1 {
     display: none;
   }
+  .header-left img {
+    padding-left: 10px;
+    width: 50px;
+    height: 50px;
+  }
   nav ul li {
-    margin-right: 2px;
+    margin-right: 0px;
   }
   .dropdown-content {
     min-width: 120px;
