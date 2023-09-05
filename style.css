@@ -444,8 +444,10 @@ video:last-child {
     height: 50px;
   }
   nav ul li {
+    display: inline;
     margin-right: 5px;
     padding-left: 5px;
+    font-size: 15px;
   }
   .dropdown-content {
     min-width: 120px;
