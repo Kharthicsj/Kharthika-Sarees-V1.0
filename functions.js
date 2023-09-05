@@ -62,14 +62,6 @@ function redirectToShopPage(target) {
   }
 }
 
-<button onclick="redirectToShopPage('cotton')">Cotton Sarees</button>
-<button onclick="redirectToShopPage('cottonChudithars')">Cotton Chudithars</button>
-<button onclick="redirectToShopPage('silk')">Silk Sarees</button>
-<button onclick="redirectToShopPage('silkChudithars')">Silk Chudithars</button>
-<button onclick="redirectToShopPage('kora)">Kora Sarees</button>
-<button onclick="redirectToShopPage('koraChudithars')">kora Chudithars</button>
-
-
 document.getElementById('cotton-link').addEventListener('click', function(e) {
     e.preventDefault();
     window.location.href = 'Shop.html#Cotton';
