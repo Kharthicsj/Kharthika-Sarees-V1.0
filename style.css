@@ -443,7 +443,8 @@ video:last-child {
     height: 50px;
   }
   nav ul li {
-    margin-right: 0px;
+    margin-right: 5px;
+    padding-left: 5px;
   }
   .dropdown-content {
     min-width: 120px;
