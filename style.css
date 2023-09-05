@@ -432,13 +432,13 @@ video:last-child {
 }
 
 /* Media Query for Mobile Devices */
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
   /* Adjust styles for mobile devices here */
   .header-left h1 {
     display: none;
   }
   nav ul li {
-    margin-right: 10px;
+    margin-right: 4px;
   }
   .dropdown-content {
     min-width: 120px;
@@ -452,19 +452,22 @@ video:last-child {
   }
   .section-description {
     font-size: 14px;
-    padding: 15px;
+    padding: 10px;
     }
   .image-section {
+    width: 20px;
+    height: 20px;
     padding: 10px;
   }
   .saree-item {
     padding: 10px;
   }
   .saree-item img {
-    max-width: 80%;
+    max-width: 50%;
   }
   .saree-item h3 {
     font-size: 18px;
+    padding-right: 10px;
   } 
   .saree-description {
     display: none;
