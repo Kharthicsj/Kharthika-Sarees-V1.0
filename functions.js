@@ -82,6 +82,11 @@ document.getElementById('cotton-link').addEventListener('click', function(e) {
     e.preventDefault();
     window.location.href = 'Shop.html#SoftSilk';
   });
+
+  document.getElementById('about').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.location.href = 'index.html#about';
+  });
   
   
   
