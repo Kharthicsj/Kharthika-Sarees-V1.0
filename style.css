@@ -438,7 +438,7 @@ video:last-child {
     display: none;
   }
   nav ul li {
-    margin-right: 4px;
+    margin-right: 2px;
   }
   .dropdown-content {
     min-width: 120px;
