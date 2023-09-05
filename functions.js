@@ -38,31 +38,38 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 
-  function redirectToShopPage() {
-    var shopPageUrl = 'Shop.html #cotton';
-    window.location.href = shopPageUrl;
+function redirectToShopPage(target) {
+  // Define the target section IDs for each shop category
+  const targets = {
+    cotton: 'cotton',
+    cottonChudithars: 'Cotton-Chudithars',
+    silk: 'silk',
+    silkChudithars: 'Silk-Chudithars',
+    kora: 'kora',
+    koraChudithars: 'kora-chudithars',
+  };
+
+  // Check if the target is valid
+  if (targets.hasOwnProperty(target)) {
+    // Get the target section ID
+    const targetSection = targets[target];
+
+    // Scroll to the target section
+    const targetElement = document.getElementById(targetSection);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
 
-function redirectToShopPageCC() {
-  var shopPageUrl = 'Shop.html #Cotton-Chudithars';
-  window.location.href = shopPageUrl;
-}
-function redirectToShopPageSilkSaree() {
-  var shopPageUrl = 'Shop.html #silk';
-  window.location.href = shopPageUrl;
-}
-function redirectToShopPageSilkC() {
-  var shopPageUrl = 'Shop.html #Silk-Chudithars';
-  window.location.href = shopPageUrl;
-}
-function redirectToShopPageKora() {
-  var shopPageUrl = 'Shop.html #kora';
-  window.location.href = shopPageUrl;
-}
-function redirectToShopPageKoraC() {
-  var shopPageUrl = 'Shop.html #kora-chudithars';
-  window.location.href = shopPageUrl;
-}
+<button onclick="redirectToShopPage('cotton')">Cotton Sarees</button>
+<button onclick="redirectToShopPage('cottonChudithars')">Cotton Chudithars</button>
+<button onclick="redirectToShopPage('silk')">Silk Sarees</button>
+<button onclick="redirectToShopPage('silkChudithars')">Silk Chudithars</button>
+<button onclick="redirectToShopPage('kora)">Kora Sarees</button>
+<button onclick="redirectToShopPage('koraChudithars')">kora Chudithars</button>
+
+
 document.getElementById('cotton-link').addEventListener('click', function(e) {
     e.preventDefault();
     window.location.href = 'Shop.html#Cotton';
