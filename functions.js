@@ -93,5 +93,8 @@ document.getElementById('cotton-link').addEventListener('click', function(e) {
     window.location.href = 'index.html#about';
   });
   
-  
+  document.getElementById('contact-link').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.location.href = 'contact.html';
+  });
   
