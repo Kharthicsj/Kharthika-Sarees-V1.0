@@ -63,7 +63,25 @@ function redirectToShopPageKoraC() {
   var shopPageUrl = 'Shop.html #kora-chudithars';
   window.location.href = shopPageUrl;
 }
+document.getElementById('cotton-link').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.location.href = 'Shop.html#Cotton';
+  });
 
+  document.getElementById('silk-link').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.location.href = 'Shop.html#Silk';
+  });
+
+  document.getElementById('kora-link').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.location.href = 'Shop.html#Kora';
+  });
+
+  document.getElementById('soft-silk-link').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.location.href = 'Shop.html#SoftSilk';
+  });
   
   
   
