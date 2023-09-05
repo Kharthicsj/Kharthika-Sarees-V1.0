@@ -70,17 +70,17 @@ document.getElementById('cotton-link').addEventListener('click', function(e) {
 
   document.getElementById('silk-link').addEventListener('click', function(e) {
     e.preventDefault();
-    window.location.href = 'Shop.html#Silk';
+    window.location.href = 'Shop.html#silk';
   });
 
   document.getElementById('kora-link').addEventListener('click', function(e) {
     e.preventDefault();
-    window.location.href = 'Shop.html#Kora';
+    window.location.href = 'Shop.html#kora';
   });
 
   document.getElementById('soft-silk-link').addEventListener('click', function(e) {
     e.preventDefault();
-    window.location.href = 'Shop.html#SoftSilk';
+    window.location.href = 'Shop.html#soft-silk';
   });
   
   
