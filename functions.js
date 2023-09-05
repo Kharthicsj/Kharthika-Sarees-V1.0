@@ -37,36 +37,36 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       }
     });
   });
-function redirectToShopPage(target) {
-  // Define the target section IDs for each shop category
-  const targets = {
-    cotton: 'cotton',
-    cottonChudithars: 'Cotton-Chudithars',
-    silk: 'silk',
-    silkChudithars: 'Silk-Chudithars',
-    kora: 'kora',
-    koraChudithars: 'kora-chudithars',
-  };
 
-  // Check if the target is valid
-  if (targets.hasOwnProperty(target)) {
-    // Get the target section ID
-    const targetSection = targets[target];
+document.getElementById('cottonSareeButton').addEventListener('click', function() {
+    var shopPageUrl = 'Shop.html#Cotton'; // Replace with the correct section ID
+    window.location.href = shopPageUrl;
+});
 
-    // Redirect to the target HTML file
-    window.location.href = 'Shop.html';
+document.getElementById('cottonChudiButton').addEventListener('click', function() {
+    var shopPageUrl = 'Shop.html#Cotton-Chudithars'; // Replace with the correct section ID
+    window.location.href = shopPageUrl;
+});
 
-    // Listen for the 'load' event on the target HTML file
-    window.addEventListener('load', function() {
-      // Scroll to the target section using JavaScript
-      const element = document.getElementById(targetSection);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  }
-}
+document.getElementById('silkSareeButton').addEventListener('click', function() {
+    var shopPageUrl = 'Shop.html#silk'; // Replace with the correct section ID
+    window.location.href = shopPageUrl;
+});
 
+document.getElementById('silkChudiButton').addEventListener('click', function() {
+    var shopPageUrl = 'Shop.html#Silk-Chudithars'; // Replace with the correct section ID
+    window.location.href = shopPageUrl;
+});
+
+document.getElementById('koraSareeButton').addEventListener('click', function() {
+    var shopPageUrl = 'Shop.html#kora'; // Replace with the correct section ID
+    window.location.href = shopPageUrl;
+});
+
+document.getElementById('koraChudiButton').addEventListener('click', function() {
+    var shopPageUrl = 'Shop.html#kora-chudithars'; // Replace with the correct section ID
+    window.location.href = shopPageUrl;
+});
 
 document.getElementById('cotton-link').addEventListener('click', function(e) {
     e.preventDefault();
