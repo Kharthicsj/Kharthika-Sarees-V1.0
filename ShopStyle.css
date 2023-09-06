@@ -464,6 +464,11 @@ a.buy-now-link {
     padding-left: 10%;
   }
 
+  .cotton-product a{
+    display: inline;
+    font-size: 14px;
+  }
+
   /* Footer */
   .footer {
     flex-direction: column; /* Stack elements vertically */
