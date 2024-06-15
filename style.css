@@ -10,6 +10,13 @@ body {
   color: #333;
 }
 
+#legals{
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  margin-right: 30px;
+}
+
 /* Header */
 header {
   background-color: #fff;
